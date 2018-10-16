@@ -1,0 +1,79 @@
+JFDML JFormDesigner: "6.0.4.0.167" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:29:p, par l {seq {comp btnInsert:::p::p, space :p:71:p, comp btnUpdate:::p::p, space :p:67:p, comp btnDelete:::p::p, space :0:325:x}, seq {par l {comp title1:::p::p, comp title2:::p::p, comp title3:::p::p}, space :p:38:p, par l:::p {comp txtMaKH::l:p:48:p, comp txtDiem::l::163:x, comp txtSDT::l::163:x}, space ::472:x}, seq {par l {seq {par l {comp btnSelect::::186:x, comp txtSearch::::186:x}, space s:::p}, seq l {space :p:68:p, comp title4:::p::p, space ::86:x}}, comp scrollPane1:::p::p, space :p:53:p}}}}"
+			"$verticalGroup": "par l {seq l {space :p:19:p, par t {par b:t {comp title2::b:p::p, comp txtSDT::b:p::p}, seq t {par l {comp scrollPane1:::p:181:p, seq {comp btnSelect:::p::p, space :p:32:p, comp title4:::p::p, space u:::p, comp txtSearch:::p::p}}, space :p:41:p, par b {comp title1::b:p::p, comp txtMaKH::b:p::p}, space :p:48:p}}, space :19:19:p, par b {comp title3::b:p::p, comp txtDiem::b:p::p}, space :p:78:p, par b {comp btnInsert::b:p::p, comp btnUpdate::b:p::p, comp btnDelete::b:p::p}, space ::137:x}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "tableKH"
+					"autoCreateRowSorter": true
+					addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "tableKHKeyReleased", true ) )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "tableKHMouseClicked", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnSelect"
+				"text": "Xem bảng Khách Hàng"
+				"background": new java.awt.Color( 255, 204, 0, 255 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSelectActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtSearch"
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "txtSearchKeyReleased", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtMaKH"
+				"enabled": false
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtDiem"
+			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsTitle" ) {
+				name: "title1"
+				"textWithMnemonic": "Mã KH"
+			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsTitle" ) {
+				name: "title2"
+				"textWithMnemonic": "SĐT"
+			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsTitle" ) {
+				name: "title3"
+				"textWithMnemonic": "Điểm"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnInsert"
+				"text": "Thêm KH"
+				"background": new java.awt.Color( 255, 204, 0, 255 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnInsertActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnUpdate"
+				"text": "Cập Nhật"
+				"background": new java.awt.Color( 255, 204, 0, 255 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnUpdateActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnDelete"
+				"text": "Xóa"
+				"background": new java.awt.Color( 255, 204, 0, 255 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnDeleteActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtSDT"
+			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsTitle" ) {
+				name: "title4"
+				"textWithMnemonic": "Tìm kiếm"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 10, 0 )
+			"size": new java.awt.Dimension( 740, 645 )
+		} )
+	}
+}

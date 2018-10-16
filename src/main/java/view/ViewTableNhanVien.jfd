@@ -1,0 +1,106 @@
+JFDML JFormDesigner: "6.0.4.0.167" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::96:x, comp panel1:::p::p, space :p:15:p}, seq {par l {seq {space :::p, par l {comp scrollPane1:::p:725:p, seq l {comp btnFillData:::p::p, space :p:49:p, comp title1:::p::p, space s:::p, comp txtSearch:::p:128:p}}}, seq l {space :p:40:p, comp btnInsert:::p::p, space :p:44:p, comp btnUpDate:::p::p, space :p:40:p, comp btnDelete:::p::p}}, space ::27:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp scrollPane1:::p:134:p, space :p:34:p, par l {comp btnFillData:::p::p, par b {comp title1::b:p:30:p, comp txtSearch::b:p::p}}, space s:::p, comp panel1:::p::p, space :p:49:p, par b {comp btnInsert::b:p::p, comp btnUpDate::b:p::p, comp btnDelete::b:p::p}, space ::118:x}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "tableNV"
+					"autoCreateRowSorter": true
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "tableNVMouseClicked", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnFillData"
+				"text": "Xem bảng Nhân Viên"
+				"background": new java.awt.Color( 51, 255, 51, 255 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnFillDataActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtSearch"
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyReleased", "txtSearchKeyReleased", true ) )
+			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsTitle" ) {
+				name: "title1"
+				"textWithMnemonic": "Tìm"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {par l {seq l {space :p:28:p, comp title2:::p::p}, seq l {space :p:27:p, par l {comp title5:::p::p, comp title3:::p::p}}}, space s:::p, par l {comp txtMaNV:::p:42:p, comp txtTen:::p:128:p, comp chCa:::p::p}, space :p:110:p, par l {seq {par l {comp title6:::p::p, comp title7:::p::p}, space :p:26:p, par l {comp txtLuong:::p:100:p, comp txtSdt:::p:175:p}}, seq {comp title8:::p::p, space s:::p, comp txtThuong:::p:100:p}}, space ::90:x}}"
+				"$verticalGroup": "par l {seq {space :p:23:p, par b {comp title2::b:p::p, comp title6::b:p::p, comp txtMaNV::b:p::p, comp txtSdt::b:p::p}, par l {seq {space :p:15:p, par b {comp title3::b:p::p, comp txtTen::b:p::p}}, seq l {space :p:13:p, par b {comp title7::b:p::p, comp txtLuong::b:p::p}}}, par l {seq {space :p:17:p, par b {comp title8::b:p::p, comp txtThuong::b:p::p, comp title5::b:p::p}}, seq l {space s:::p, comp chCa:::p::p}}, space :0:59:x}}"
+			} ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txtMaNV"
+					"enabled": false
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txtSdt"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txtThuong"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txtTen"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "txtLuong"
+				} )
+				add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsTitle" ) {
+					name: "title2"
+					"textWithMnemonic": "Mã NV"
+				} )
+				add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsTitle" ) {
+					name: "title3"
+					"textWithMnemonic": "Tên NV"
+				} )
+				add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsTitle" ) {
+					name: "title5"
+					"textWithMnemonic": "Ca"
+				} )
+				add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsTitle" ) {
+					name: "title6"
+					"textWithMnemonic": "SĐT"
+				} )
+				add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsTitle" ) {
+					name: "title7"
+					"textWithMnemonic": "Lương"
+				} )
+				add( new FormComponent( "com.jformdesigner.designer.wrapper.JGoodiesFormsTitle" ) {
+					name: "title8"
+					"textWithMnemonic": "Thưởng"
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "chCa"
+					"text": "1/2"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnInsert"
+				"text": "Thêm NV"
+				"background": new java.awt.Color( 255, 204, 0, 255 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnInsertActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnUpDate"
+				"text": "Cập Nhật"
+				"background": new java.awt.Color( 255, 204, 0, 255 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnUpDateActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnDelete"
+				"text": "Xóa"
+				"background": new java.awt.Color( 255, 204, 0, 255 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnDeleteActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 10, 40 )
+			"size": new java.awt.Dimension( 760, 655 )
+		} )
+	}
+}
