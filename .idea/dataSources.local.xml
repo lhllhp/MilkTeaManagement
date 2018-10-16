@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="ConnectToDB" uuid="42ae1745-96ab-48ee-88fc-ccf09c0c2fcb">
+      <database-info product="Microsoft SQL Server" version="13.00.1601" jdbc-version="4.2" driver-name="Microsoft JDBC Driver 7.0 for SQL Server" driver-version="7.0.0.0" family="MSSQL" exact-version="13.0.160">
+        <extra-name-characters>$#@</extra-name-characters>
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>sa</user-name>
+      <introspection-schemas>MilkTeaManagement:dbo</introspection-schemas>
+    </data-source>
+  </component>
+</project>
